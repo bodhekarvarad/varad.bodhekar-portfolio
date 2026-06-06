@@ -4,7 +4,13 @@
 .nav-link:hover{
  text-decoration: underline blue;
  font-weight:  bold;
-
-
-
+}
+.hero-bg{
+    background-color: #061A3A;
+}
+#hero-name{
+    margin: auto;
+   padding: 20px;;
+    padding-left: 20%;
+  
 }
