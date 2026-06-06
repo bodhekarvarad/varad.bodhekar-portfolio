@@ -1,0 +1,10 @@
+.name{
+    color: blue;
+}
+.nav-link:hover{
+ text-decoration: underline blue;
+ font-weight:  bold;
+
+
+
+}
