@@ -5,7 +5,7 @@ const Navbar = () => {
     
     <div>
       <nav className="navbar navbar-expand-lg">
-        <div className="container p-2 border-bottom">
+        <div className="container p-2">
           <a className="navbar-brand " href="/"><b>
               Varad <span className="name">Bodhekar</span>
           </b>
