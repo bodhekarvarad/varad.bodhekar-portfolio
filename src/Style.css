@@ -3,7 +3,7 @@
 }
 .nav-link:hover{
  text-decoration: underline blue;
- font-weight:  bold;
+ font-weight:  bolder;
 }
 .hero-bg{
     background-color: #061A3A;
@@ -20,4 +20,9 @@
     border: 1px solid rgba(211, 203, 203, 0.1);
     color: white;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.about_me:hover{
+    text-decoration: underline blue;
+ font-weight:bolder;
 }
