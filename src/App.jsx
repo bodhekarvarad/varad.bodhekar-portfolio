@@ -8,6 +8,7 @@ import EducationInfo from './components/EducationInfo'
 import Resume from './components/Resume';
 import Contact from './components/Contact'
 import Footer from './Footer'
+
 function App() {
   return (
     <>
