@@ -31,3 +31,12 @@
        text-decoration: underline blue;
  font-weight:bolder;
 }
+div.container {
+  text-align: center;
+}
+
+ul.list {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
