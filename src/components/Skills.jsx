@@ -2,12 +2,12 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="container boder-bottom">
-      <h1 className="text-center skills mt-3">
+    <div className="container border-bottom">
+      <h1 className="text-center skills mt-4">
         <b>Skills</b>
       </h1>
 
-      <div className="row text-center">
+      <div className="row mt-5 text-center ">
         <div className="col-md-3">
           <div className="card border-0">
             <h3>
