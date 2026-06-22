@@ -33,7 +33,7 @@ const About = () => {
     className="card text-black border-0 mt-5">
       <p className="card-text mb-3">
       <i class="fa-regular fa-envelope"></i>{" "}
-       <b>Email:</b>{" "}<span>bodhekarvarad2004@gmail.com</span>
+       <b>Email:</b>{" "}<span>varad.bodhekar@gmail.com</span>
       </p>
 
       <p className="card-text mb-3">
