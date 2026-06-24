@@ -1,12 +1,16 @@
 import React from "react";
-const Footer=()=>{
-return(
-     <div className="bg-black">
-        <div>
-            <p className="text-white text-center mb-0"><i class="fa-regular fa-copyright"></i><b> 2026  Varad Bodhekar  All Right Reserved.</b> </p>    
-        </div>
-          
- </div>
-)
-}
+
+const Footer = () => {
+      const year = new Date().getFullYear();
+  return (
+   
+    <footer className="bg-black py-3">
+      <p className="text-white text-center mb-0">
+        <i className="fa-regular fa-copyright"></i>
+        <b> {year} Varad Bodhekar. All Rights Reserved.</b>
+      </p>
+    </footer>
+  );
+};
+
 export default Footer;
