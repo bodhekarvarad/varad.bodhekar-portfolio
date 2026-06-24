@@ -7,7 +7,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg">
         <div className="container p-2">
-          <a className="navbar-brand " href="/"><b>
+          <a className="navbar-brand " href="#"><b>
               Varad <span className="name">Bodhekar</span>
           </b>
           
@@ -32,37 +32,37 @@ const Navbar = () => {
           >
             <ul className="navbar-nav me-auto ">
               <li className="nav-item mx-2">
-                <a className="nav-link active " aria-current="page" href="/">
+                <a className="nav-link active " aria-current="page" href="#">
                   Home
                 </a>
               </li>
                <li className="nav-item mx-2">
-                <a className="nav-link active " aria-current="page" href="/about">
+                <a className="nav-link active " aria-current="page" href="#about">
                   About
                 </a>
               </li>
                <li className="nav-item mx-2">
-                <a className="nav-link active" aria-current="page" href="/skills">
+                <a className="nav-link active" aria-current="page" href="#skills">
                   Skills
                 </a>
               </li>
                <li className="nav-item mx-2">
-                <a className="nav-link active" aria-current="page" href="/projects">
+                <a className="nav-link active" aria-current="page" href="#projects">
                   Projects
                 </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link active" aria-current="page" href="/education">
+                <a className="nav-link active" aria-current="page" href="#education">
                   Education
                 </a>
               </li>
                <li className="nav-item mx-2">
-                <a className="nav-link active" aria-current="page" href="/resume">
+                <a className="nav-link active" aria-current="page" href="#resume">
                 Resume
                 </a>
               </li>
                <li className="nav-item mx-2">
-                <a className="nav-link active" aria-current="page" href="/contact">
+                <a className="nav-link active" aria-current="page" href="#contact">
                 Contact
                 </a>
               </li>
