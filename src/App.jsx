@@ -14,11 +14,9 @@ function App() {
     <>
       <Navbar />
       <Hero />
-
 <section id="about">
   <About />
 </section>
-
 <section id="skills">
   <Skills />
 </section>
@@ -31,10 +29,7 @@ function App() {
 <section id="resume">
   <Resume />
 </section>
-
-
-
-<Footer />
+<Footer/>
 
     </>
   );
