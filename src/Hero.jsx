@@ -23,9 +23,9 @@ const Hero=()=>{
       <button className="btn btn-primary btn-lg mx-1">
         View Projects
       </button>
-      <button className="btn btn-outline-light mx-3">
+      <a href="/resume.pdf" download className="btn btn-outline-light mx-3">
         Download Resume <i className="fa-solid fa-download"></i>
-      </button>
+      </a>
       <button className="btn btn-outline-light mx-1">
         <i className="fa-regular fa-envelope"></i> Contact Me
       </button>
