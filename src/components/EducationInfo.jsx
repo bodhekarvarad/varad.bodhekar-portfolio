@@ -6,7 +6,7 @@ import React from "react";
 <div className="row p-3 justify-content-center">
    <div className="col-md-5 p-2 mx-5 justify-content-center">
   <h4 className="my-2 mb-2"><i class="fa-solid fa-user-graduate"></i>{" "}Education</h4>
-  <h5 className="my-1 mt-1"><b>B.E  Computer Science And Engineering</b></h5>    
+  <h5 className="my-1 mt-3"><b>B.E  Computer Science And Engineering</b></h5>    
   <p className="mb-0">Sipna College Of Engineering And Technology Amravati(Maharashtra)</p>
   <p>2023-2027</p>
 
@@ -17,7 +17,7 @@ import React from "react";
    <div className="col-md-5 p-2 mx-5 justify-content-center">
 <h4><i class="fa-solid fa-trophy"></i>{" "}Achievements</h4>
 
-<ul>
+<ul className="mt-3">
    <li>
 Developer Program Member (GitHub)
    </li>
