@@ -23,9 +23,6 @@ function App() {
   <Skills />
 </section>
 
-<section id="projects">
-  <Projects />
-</section>
 
 <section id="education">
   <EducationInfo />
@@ -35,9 +32,7 @@ function App() {
   <Resume />
 </section>
 
-<section id="contact">
-  <Contact />
-</section>
+
 
 <Footer />
 
