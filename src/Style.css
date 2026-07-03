@@ -2,7 +2,7 @@
     color: blue;
 }
 .nav-link:hover{
- text-decoration: underline blue;
+ text-decoration: underline #061A3A;
  font-weight:  bolder;
 }
 .hero-bg{
@@ -23,12 +23,12 @@
 }
 
 .about_me:hover{
-    text-decoration: underline blue;
+    text-decoration: underline#061A3A;
  font-weight:bolder;
 }
 
 .skills:hover{
-       text-decoration: underline blue;
+       text-decoration: underline#061A3A;
  font-weight:bolder;
 }
 div.container {
@@ -46,4 +46,7 @@ html {
 .education-info{
     background-color:#EBF9F8;
    
+}
+.resume{
+    background-color: #061A3A;
 }
