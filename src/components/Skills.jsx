@@ -11,7 +11,7 @@ const Skills = () => {
         <div className="col-md-3">
           <div className="card border-0">
             <h3>
-              <i className="fa-solid fa-code text-primary"></i> Languages
+              <i className="fa-solid fa-code text-primary-emphasis"></i> Languages
             </h3>
             <ul className="list-unstyled">
               <li>Python</li>
@@ -24,7 +24,7 @@ const Skills = () => {
         <div className="col-md-3">
           <div className="card border-0">
             <h3>
-              <i className="fa-solid fa-brain text-primary"></i> AI/ML
+              <i className="fa-solid fa-brain text-primary-emphasis"></i> AI/ML
             </h3>
             <ul className="list-unstyled">
               <li>NumPy</li>
@@ -37,7 +37,7 @@ const Skills = () => {
         <div className="col-md-3">
           <div className="card border-0 ">
             <h3>
-              <i className="fa-solid fa-globe text-primary"></i> Web Dev
+              <i className="fa-solid fa-globe text-primary-emphasis"></i> Web Dev
             </h3>
             <ul className="list-unstyled">
               <li>HTML</li>
@@ -52,7 +52,7 @@ const Skills = () => {
         <div className="col-md-3">
           <div className="card border-0">
             <h3>
-              <i className="fa-solid fa-screwdriver-wrench text-primary"></i> Tools
+              <i className="fa-solid fa-screwdriver-wrench text-primary-emphasis"></i> Tools
             </h3>
             <ul className="list-unstyled">
               <li>Git</li>
