@@ -23,7 +23,7 @@ const EducationInfo = () => {
                 Amravati (Maharashtra)
               </p>
 
-              <p>2023 - 2027</p>
+              <p>2024 - 2027</p>
 
               <h5 className="mt-4">
                 <b>Diploma Computer Science And Engineering</b>
