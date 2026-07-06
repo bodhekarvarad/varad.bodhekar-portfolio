@@ -1,17 +1,21 @@
 import React from "react";
 import "./Style.css";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div className="container">
 
-        <a className="navbar-brand" href="#">
+      
+        <Link className="navbar-brand" to="/">
           <b>
             Varad <span className="name">Bodhekar</span>
           </b>
-        </a>
+        </Link>
 
+  
         <button
           className="navbar-toggler"
           type="button"
@@ -24,6 +28,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
+    
         <div
           className="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
@@ -31,45 +36,45 @@ const Navbar = () => {
           <ul className="navbar-nav">
 
             <li className="nav-item">
-              <a className="nav-link active" href="#">
+              <HashLink smooth className="nav-link active" to="/#">
                 Home
-              </a>
+              </HashLink>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link active" href="#about">
+              <HashLink smooth className="nav-link active" to="/#about">
                 About
-              </a>
+              </HashLink>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link active" href="#skills">
+              <HashLink smooth className="nav-link active" to="/#skills">
                 Skills
-              </a>
+              </HashLink>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link active" href="#projects">
+              <Link className="nav-link active" to="/projects">
                 Projects
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link active" href="#education">
+              <HashLink smooth className="nav-link active" to="/#education">
                 Education
-              </a>
+              </HashLink>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link active" href="#resume">
+              <HashLink smooth className="nav-link active" to="/#resume">
                 Resume
-              </a>
+              </HashLink>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link active" href="#contact">
+              <Link className="nav-link active" to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
 
           </ul>
