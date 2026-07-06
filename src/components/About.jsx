@@ -5,7 +5,6 @@ const About = () => {
   return (
     <div className="row border-bottom py-5">
 
-      {/* Left Section */}
       <div className="col-12 col-lg-6">
         <h1 className="about_me mt-5 about-heading">
           <b>About Me</b>
@@ -18,7 +17,7 @@ const About = () => {
         </p>
       </div>
 
-      {/* Middle Card */}
+      
       <div className="col-12 col-md-6 col-lg-3 mt-4">
         <div className="card text-black border-0 mt-lg-5 info-card">
           <div className="card-body">
@@ -42,7 +41,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* Right Card */}
+ 
       <div className="col-12 col-md-6 col-lg-3 mt-4">
         <div className="card text-black border-0 mt-lg-5 info-card">
           <div className="card-body">

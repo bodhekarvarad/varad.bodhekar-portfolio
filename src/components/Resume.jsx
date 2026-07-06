@@ -6,7 +6,7 @@ const Resume = () => {
       <div className="container">
         <div className="row align-items-center justify-content-between">
 
-          {/* Left Side */}
+          
           <div className="col-12 col-lg-8 text-center text-lg-start">
             <div className="d-flex align-items-center justify-content-center justify-content-lg-start mb-3">
               <i className="fa-solid fa-align-right text-light fs-2 me-3"></i>
@@ -19,7 +19,7 @@ const Resume = () => {
             </p>
           </div>
 
-          {/* Right Side */}
+         
           <div className="col-12 col-lg-4 text-center text-lg-end mt-4 mt-lg-0">
             <a
               href="/resume.pdf"

@@ -7,7 +7,6 @@ const EducationInfo = () => {
       <div className="container">
         <div className="row justify-content-center g-4">
 
-          {/* Education */}
           <div className="col-12 col-lg-5">
             <div className="education-card p-3">
               <h4 className="mb-4">
@@ -38,7 +37,7 @@ const EducationInfo = () => {
             </div>
           </div>
 
-          {/* Achievements */}
+       
           <div className="col-12 col-lg-5">
             <div className="education-card p-3">
               <h4 className="mb-4">

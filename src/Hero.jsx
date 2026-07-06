@@ -4,7 +4,7 @@ import "./Style.css";
 const Hero = () => {
   return (
     <div className="row hero-bg align-items-center">
-      {/* Left Side */}
+   
       <div className="col-12 col-lg-6">
         <div id="hero-name">
           <h3 className="text-white mt-3">
@@ -46,7 +46,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Right Side */}
       <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center mt-5 mt-lg-0">
         <div className="card what-i-do-card text-white border-0">
           <div className="card-body p-4">
