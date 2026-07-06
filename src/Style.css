@@ -1,52 +1,232 @@
 .name{
     color: blue;
 }
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
+.nav-link{
+    font-weight: 500;
+    margin-left: 10px;
+}
+
 .nav-link:hover{
- text-decoration: underline #061A3A;
- font-weight:  bolder;
+    text-decoration: underline  blue;
+    font-weight: bold;
 }
 .hero-bg{
     background-color: #061A3A;
 }
 #hero-name{
     margin: auto;
-   padding: 40px;;
-    padding-left: 10rem;
-  
+    padding: 40px;
+    padding-left: 8rem;
 }
 .what-i-do-card{
     background-color: rgba(255,255,255,0.1);
     border-radius: 10px;
-    border: 1px solid rgba(211, 203, 203, 0.1);
+    border: 1px solid rgba(211,203,203,0.1);
     color: white;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 420px;
 }
 
-.about_me:hover{
-    text-decoration: underline#061A3A;
- font-weight:bolder;
+.about-heading{
+    margin-left: 7rem;
+
+}
+.about-heading:hover{
+    text-decoration: underline  blue;
+
+}
+.about-text{
+    margin-left: 7rem;
+    letter-spacing: 0.2px;
+    line-height: 1.7;
 }
 
+.info-card{
+    height: 100%;
+}
+
+.info-card .card-body{
+    padding: 20px;
+}
 .skills:hover{
-       text-decoration: underline#061A3A;
- font-weight:bolder;
-}
-div.container {
-  text-align: center;
+    text-decoration: underline  blue;
+    font-weight: bold;
 }
 
-ul.list {
-  display: inline-block;
-  text-align: center;
-  padding: 10px;
+.skill-card{
+    transition: all 0.3s ease;
+    padding: 15px;
 }
-html {
-  scroll-behavior: smooth;
+
+.skill-card:hover{
+    transform: translateY(-5px);
+}
+
+.skill-card h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.skill-card li{
+    padding: 5px 0;
+}
+.education-card{
+    height: 100%;
+}
+
+.education-card ul{
+    padding-left: 20px;
+}
+
+.education-card li{
+    margin-bottom: 12px;
 }
 .education-info{
-    background-color:#EBF9F8;
-   
+    background-color: #EBF9F8;
 }
+
 .resume{
     background-color: #061A3A;
+}
+.resume-text{
+    max-width: 700px;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 992px){
+
+    #hero-name{
+        padding: 40px;
+        text-align: center;
+    }
+  .about-heading{
+        margin-left: 2rem;
+    }
+      .about-text{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+   .info-card{
+        margin: auto;
+    }
+
+    .what-i-do-card{
+        margin: 30px auto;
+    }
+ .skill-card{
+        margin: auto;
+    }
+     .education-card{
+        text-align: left;
+    }
+.resume-text{
+        margin: auto;
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px){
+
+    #hero-name{
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about-heading{
+        margin: 0;
+        text-align: center;
+    }
+    #hero-name h1{
+        font-size: 2.3rem;
+    }.about-text{
+        margin: 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    #hero-name h3{
+        font-size: 1.5rem;
+    }
+
+    #hero-name h4{
+        font-size: 1.2rem;
+    }
+
+    .what-i-do-card{
+        max-width: 100%;
+        margin: 25px auto;
+    }
+
+    .btn{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+      .info-card{
+        text-align: center;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 350px;
+    } .skill-card{
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .skill-card h3{
+        font-size: 1.3rem;
+    }
+.education-card{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .education-card ul{
+        text-align: left;
+        display: inline-block;
+    }
+
+    .education-card h4{
+        font-size: 1.6rem;
+    }
+
+    .education-card h5{
+        font-size: 1.2rem;
+    }
+      .resume{
+        text-align: center;
+    }
+
+    .resume-btn{
+        width: 100%;
+        max-width: 280px;
+    }
+    .navbar-nav{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .nav-link{
+        margin: 10px 0;
+    }
+
+}
+
+/* ---------- Small Mobile ---------- */
+@media (max-width: 576px){
+
+    #hero-name{
+        padding: 15px;
+    }
+.about-heading{
+        font-size: 2rem;
+    }
+
+    .about-text{
+        font-size: 1rem;
+        padding: 0 15px;
+    }
 }
