@@ -1,5 +1,6 @@
 import React from "react";
 import "./Style.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -27,10 +28,11 @@ const Hero = () => {
           </p>
 
           <div className="d-flex flex-wrap gap-2 mt-4">
-            <button className="btn btn-primary btn-lg">
+            <Link to="/projects">
+            <button  className="btn btn-primary btn-lg">
               View Projects
             </button>
-
+</Link>
             <a
               href="/resume.pdf"
               download
@@ -38,10 +40,11 @@ const Hero = () => {
             >
               Download Resume <i className="fa-solid fa-download"></i>
             </a>
-
+             <Link to="/contact">
             <button className="btn btn-outline-light">
               <i className="fa-regular fa-envelope"></i> Contact Me
             </button>
+            </Link>
           </div>
         </div>
       </div>

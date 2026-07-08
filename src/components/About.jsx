@@ -52,12 +52,6 @@ const About = () => {
               <span>varad.bodhekar@gmail.com</span>
             </p>
 
-            <p className="card-text mb-3">
-              <i className="fa-solid fa-phone"></i>{" "}
-              <b>Phone:</b>{" "}
-              <span>+91 9404350450</span>
-            </p>
-
             <p className="card-text">
               <i className="fa-solid fa-language"></i>{" "}
               <b>Language:</b>{" "}

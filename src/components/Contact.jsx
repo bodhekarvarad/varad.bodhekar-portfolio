@@ -1,45 +1,212 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+import "./contact.css";
 
-const Contact = () => {
-  return (
-    <div className="container text-center py-5" style={{ minHeight: "80vh" }}>
-      <h1 className="mb-4">Contact</h1>
+export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-      <h4 className="text-primary mb-3">
-         This page is currently under development.
-      </h4>
+  const [loading, setLoading] = useState(false);
 
-      <p className="lead">
-        I'm working on creating a contact page with a contact form and my
-        professional social links.
-      </p>
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
-      <p>
-        In the meantime, feel free to connect with me on LinkedIn or send me an
-        email.
-      </p>
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-      <div className="d-flex flex-wrap justify-content-center gap-3 mt-4">
-        <a
-          href="https://www.linkedin.com/in/varad-bodhekar-050994279/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary btn-lg"
-        >
-          <i className="fa-brands fa-linkedin me-2"></i>
-          LinkedIn
-        </a>
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.subject ||
+      !formData.message
+    ) {
+      alert("Please fill all fields.");
+      return;
+    }
 
-        <a
-          href="mailto:varad.bodhekar@gmail.com"
-          className="btn btn-outline-dark btn-lg"
-        >
-          <i className="fa-regular fa-envelope me-2"></i>
-          Email Me
-        </a>
-      </div>
-    </div>
+    setLoading(true);
+
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
+      alert("Message sent successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+  console.error("EmailJS Error:", error);
+
+  alert(
+    `Failed!\nStatus: ${error?.status}\nText: ${error?.text || error?.message}`
   );
-};
+}
 
-export default Contact;
+    setLoading(false);
+  };
+
+  return (
+    <section className="contact-section" id="contact">
+      <div className="contact-hero">
+        <div className="container text-center">
+          <span className="badge-contact">GET IN TOUCH</span>
+
+          <h1>
+            Let's Connect <span>With Me!</span>
+          </h1>
+
+          <p>
+            Have a project in mind or want to collaborate?
+            Feel free to reach out. I'll get back to you as soon as possible!!!
+          </p>
+        </div>
+      </div>
+
+      <div className="container contact-wrapper">
+        <div className="row g-4">
+
+      
+          <div className="col-lg-4">
+            <div className="contact-card">
+
+              <h3>Contact Information</h3>
+
+              <div className="info">
+                <strong>Email</strong>
+                <p>varad.bodhekar@gmail.com</p>
+              </div>
+
+              <div className="info">
+                <strong>Location</strong>
+                <p>Maharashtra, India</p>
+              </div>
+
+              <div className="social-links">
+
+                <a
+                  href="https://www.linkedin.com/in/varad-bodhekar-050994279"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+
+                <a
+                  href="https://github.com/bodhekarvarad"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
+
+                <a
+                  href="https://instagram.com/varadb.28"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
+
+              </div>
+
+            </div>
+          </div>
+
+       
+
+          <div className="col-lg-8">
+
+            <div className="form-card">
+
+              <h3>Send Me A Message</h3>
+
+              <form onSubmit={handleSubmit}>
+
+                <div className="row">
+
+                  <div className="col-md-6 mb-3">
+
+                    <input
+                      type="text"
+                      name="name"
+                      className="form-control"
+                      placeholder="Your Name"
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
+
+                  </div>
+
+                  <div className="col-md-6 mb-3">
+
+                    <input
+                      type="email"
+                      name="email"
+                      className="form-control"
+                      placeholder="Your Email"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+
+                  </div>
+
+                </div>
+
+                <input
+                  type="text"
+                  name="subject"
+                  className="form-control mb-3"
+                  placeholder="Subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                />
+
+                <textarea
+                  rows="6"
+                  name="message"
+                  className="form-control mb-3"
+                  placeholder="Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                ></textarea>
+
+                <button
+                  type="submit"
+                  className="btn send-btn"
+                  disabled={loading}
+                >
+                  {loading ? "Sending..." : "Send Message"}
+                </button>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
