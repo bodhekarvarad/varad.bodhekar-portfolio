@@ -32,7 +32,7 @@ const Hero = () => {
             <button  className="btn btn-primary btn-lg">
               View Projects
             </button>
-</Link>
+           </Link>
             <a
               href="/resume.pdf"
               download
